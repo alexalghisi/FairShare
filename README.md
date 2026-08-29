@@ -1,11 +1,11 @@
 # FairShare
 
-The restaurant tab argument: shared boards, a bottle Ana did not drink, a
-10% tip, and three people who each remember a different total.
+Shared-cost allocation for a restaurant bill: each line item is assigned to the
+guests who consumed it, then tip is applied to that share. Settlement uses
+largest-remainder integer division so the table still sums after rounding.
 
-The split lives in [`src/lib/split.ts`](src/lib/split.ts) — largest remainder,
-so a ban never disappears into integer division. Tick who ate. The sidebar is
-what each person owes.
+The allocator is a pure function in [`src/lib/split.ts`](src/lib/split.ts). The
+Mac window is a thin editor over that model.
 
 **React 19 · TypeScript (strict) · Vite 8 · Tailwind CSS 4 · Zustand · Vitest ·
 Playwright**
@@ -25,11 +25,11 @@ and Logs (Mountain View).
 | -------- | --------------------------------------------------------------------------------------- |
 | GitHub   | [github.com/alexalghisi](https://github.com/alexalghisi)                                |
 | LinkedIn | [linkedin.com/in/alghisi](https://www.linkedin.com/in/alghisi)                          |
-| Email    | [alessandro@onlineparentingprograms.com](mailto:alessandro@onlineparentingprograms.com) |
+| Email    | [alexalghisi@gmail.com](mailto:alexalghisi@gmail.com)                                   |
 | Location | Cluj-Napoca, Romania · open to remote / EU / US-friendly timezones                      |
 
 **Hiring?** Open an issue, message me on LinkedIn, or email
-[alessandro@onlineparentingprograms.com](mailto:alessandro@onlineparentingprograms.com).
+[alexalghisi@gmail.com](mailto:alexalghisi@gmail.com).
 
 ---
 
