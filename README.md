@@ -4,6 +4,10 @@ Shared-cost allocation for a restaurant bill: each line item is assigned to the
 guests who consumed it, then tip is applied to that share. Settlement uses
 largest-remainder integer division so the table still sums after rounding.
 
+**Download:** [latest release](https://github.com/alexalghisi/FairShare/releases/latest)
+
+![FairShare running](docs/preview.png)
+
 The allocator is a pure function in [`src/lib/split.ts`](src/lib/split.ts). The
 Mac window is a thin editor over that model.
 
